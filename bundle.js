@@ -15,7 +15,7 @@ function log(description) {
 async function test_transaction() {
   log('creating AergoClient');
   const aergo = new _client.AergoClient({}, new _client.GrpcWebProvider({
-    url: 'http://testnet-api.aergo.io:7845'
+    url: 'https://testnet-api-http.aergo.io'
   }));
   log('creating transport');
   const transport = await _hwTransportWebusb.default.create(); // removed: (3000, 1500)
