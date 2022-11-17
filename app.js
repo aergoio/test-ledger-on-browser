@@ -10,7 +10,7 @@ function log(description) {
 
 async function test_transaction() {
     log('creating AergoClient');
-    const aergo = new AergoClient({}, new GrpcWebProvider({url: 'http://testnet-api.aergo.io:7845'}));
+    const aergo = new AergoClient({}, new GrpcWebProvider({url: 'https://testnet-api-http.aergo.io'}));
     log('creating transport');
     const transport = await Transport.create();  // removed: (3000, 1500)
     log('creating LedgerAppAergo');
