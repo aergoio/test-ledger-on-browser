@@ -15,7 +15,7 @@ async function test_transaction() {
     const transport = await Transport.create();  // removed: (3000, 1500)
     log('creating LedgerAppAergo');
     const app = new LedgerAppAergo(transport);
-    const account_index = 4;
+    const account_index = 0;
     const path = "m/44'/441'/0'/0/" + account_index;
     log('getting wallet address');
     const address = await app.getWalletAddress(path);
